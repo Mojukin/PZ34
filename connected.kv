@@ -1,0 +1,72 @@
+<Connected>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: [50,100,50,100]
+        spacing: 50
+        
+        BoxLayout:
+            orientation: 'vertical'
+            spacing: 5
+            GridLayout:
+                cols:2
+                Label:
+                    text: 'Имя'
+                    halign: 'center'
+                    font_size: 17
+                    text_size: root.width-15, 15
+                TextInput:
+                    multiline:False
+                    font_size: 13
+
+                Label:
+                    text: 'Фамилия'
+                    halign: 'center'
+                    font_size: 17
+                    text_size: root.width-20, 20
+                TextInput:
+                    multiline:False
+                    font_size: 13
+
+                Label:
+                    text: 'Логин'
+                    halign: 'center'
+                    font_size: 17
+                    text_size: root.width-20, 20
+                TextInput:
+                    multiline:False
+                    font_size: 13
+
+                Label:
+                    text: 'Пароль'
+                    halign: 'center'
+                    font_size: 17
+                    text_size: root.width-20, 20
+                TextInput:
+                    multiline:False
+                    password:True
+                    font_size: 13
+
+                Label:
+                    text: 'Повторите пароль'
+                    halign: 'center'
+                    font_size: 17
+                    text_size: root.width-20, 20
+                TextInput:
+                    multiline:False
+                    password:True
+                    font_size: 13
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: 1, 0.3
+            spacing: 10
+            Button:
+                text: 'Зарегистрироваться'
+                font_size: 17
+                background_color: [.37, .89, .86, 1]
+            Button:
+                text: "Отмена"
+                font_size: 17
+                background_color: [.37, .89, .86, 1]
+                on_press: root.disconnect()
+          
